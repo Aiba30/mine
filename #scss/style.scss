@@ -1,0 +1,94 @@
+@import '_nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap');
+$containerWidth:1200px;
+$basefont-size:19px;
+//breakepoints
+$tablets:768px;
+$phones:480px;
+@import 'components/header','components/btn','components/section','components/fixed-menu';
+body{
+	color: #000;
+}
+.wrapper{
+	font-family: 'Alegreya Sans';
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main-content{
+	flex: 1 1 auto;
+}
+.container{
+	max-width:$containerWidth;
+	margin: 0 auto;
+	height: 100px;
+	padding: 0 10px;
+}
+.main-footer {
+height: 100vh;
+	&__row {
+		display: flex;
+		padding-top: 131px;
+		margin: 0 -20px;
+	}
+
+	&__column {
+		padding: 0 20px;
+		flex: 1 1 33.333%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__picture {
+		position: relative;
+		&::after{
+			content: 'Contacts';
+			font-family: 'Cedarville Cursive';
+			font-size: 28px;
+			position: absolute;
+			top: -6%;
+			right: 0;
+			writing-mode: vertical-lr;
+			transform: rotate(180deg);
+		}
+	}
+
+	&__block {
+		width: 102px;
+		height: 2px;
+		border: 2px solid #444A4A;
+		border-radius: 30px;
+	}
+&__text-block{
+}
+	&__title {
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 21px;
+	}
+
+	&__list {
+	}
+
+	&__items {
+		color: #444A4A;
+		font-size: 19px;
+		line-height: 230%;
+	}
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		padding-top: 8%;
+		font-size: 19px;
+	}
+}
+.container {
+}
+
+
+
+
+
+

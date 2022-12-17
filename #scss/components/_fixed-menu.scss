@@ -1,0 +1,26 @@
+.fixed-menu {
+	position: fixed;
+	top: 48%;
+	right: 4%;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__link {
+	}
+
+	&__item {
+		margin-top: 14px;
+	}
+
+	&__item--text {
+		font-size: 28px;
+		font-family: 'Josefin Sans';
+		font-weight: 700;
+		color: #444A4A;
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+	}
+}

@@ -1,0 +1,211 @@
+
+.hero {
+	padding-top: 36px;
+	min-height: 100%;
+	height: 100vh;
+	&__content {
+		padding-top: 158px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -20px;
+	}
+
+	&__column {
+		padding: 0 20px;
+	}
+
+	&__text {
+		font-family: 'Cedarville Cursive';
+		font-size: 28px;
+		color: #444A4A;
+		margin-bottom: 26px;
+	}
+
+	&__title {
+		font-size: 63px;
+		font-family: 'Josefin Sans';
+		font-weight: 700;
+		margin-bottom: 26px;
+	}
+
+	&__image {	
+		position: relative;
+		padding-right: 98px;
+		&::before{
+			content: url("../../img/logo/Vector 1.svg");
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 159px;
+			height: 157px;
+			background: #E3EBE7;
+			opacity: 0.4;
+			position: absolute;
+			top: 175px;
+			left: -190px;
+		}
+		&::after{
+			content: 'Coffee';
+			font-family: 'Cedarville Cursive';
+			font-size: 72px;
+			display: inline-flex;
+			padding: 360px 0 0 140px;
+			color: #444A4A;
+			background: #E3EBE7;
+			height: 466px;
+			width: 410px;
+			position: absolute;
+			left: -40px;
+			top: -135px;
+			z-index: -1;
+		}
+	}
+	
+}
+.section {
+	margin-top: 147px;
+	min-height: 320px;
+
+	&__row {
+		display: flex;
+		margin: 0 -51.5px;
+	}
+
+	&__column {
+		padding: 0 51.5px;
+		flex: 1 1 50%;
+	}
+	
+
+	&__image {
+		position: relative;
+		padding-left: 10%;
+		&::before{
+			content:'';
+			position: absolute;
+			top: -75px;
+			left: 35px;
+			z-index: -1;
+			display: inline-block;
+			width: 380px;
+			height: 287px;
+			background: #FAE9E0;
+		}
+		&::after{
+			content: 'About us';
+			display: block;
+			font-family: 'Cedarville Cursive';
+			writing-mode: vertical-lr;
+			font-size: 28px;
+			transform: rotate(180deg);
+			position: absolute;
+			left: 36px;
+			top: -100px;
+		}
+	}
+	&__content{
+		padding:0 0 16% 10%;
+	}
+	&__text-content {
+		padding-right: 16%;
+		margin-top: -13%;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		font-size: 38px;
+		font-weight: 700;
+	}
+
+	&__desc {
+		line-height: 189%;
+		color:#444A4A;
+	}
+	&__desc .p1{
+		margin-bottom: 24px;
+	}
+	&__picture{
+		padding-left: 10%;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 10%;
+			left: -9%;
+			z-index: -1;
+			display: inline-block;
+			width: 410px;
+			height: 276px;
+			background: #E3EBE7;
+		}
+	}
+}
+.first-desc {
+	margin-bottom: 15px;
+}
+
+
+
+.section-types {
+	margin-top: 60px;
+	min-height: 550px;
+	background: rgba(45,99,94,0.5);
+	&__row {
+		display: flex;
+		margin: 0 -15px;
+		padding: 45px 0 ;
+		position: relative;
+		&::before{
+			content: url('../../img/logo/Arrow\ 1.svg');
+			position: absolute;
+			top: 39%;
+			left: -3%;
+			transform: rotate(180deg);
+		}
+		&::after{
+			content: url('../../img/logo/Arrow\ 1.svg');
+			position: absolute;
+			top: 39%;
+			right:0%;
+		}
+	}
+
+	&__column {
+		padding: 0 15px;
+		flex: 1 1 33.33%;
+	}
+}
+.column {
+
+	&__item {
+		width: 339px;
+		height: 458px;
+		background: #fff;
+		border-radius: 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 45px 0;
+	}
+
+	&__title {
+		font-size: 28px;
+		font-weight: 700;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		padding: 0 22%;
+		line-height: 180%;
+		text-align: center;
+	}
+}
+
+
+
+
+

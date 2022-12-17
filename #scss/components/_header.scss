@@ -1,0 +1,35 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+
+	&__logo {
+	}
+
+	&__icon {
+		margin-right: 13px;
+	}
+
+	&__logo-text {
+		font-family:' Cedarville Cursive';
+		font-size: 32px;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+}
+.menu {
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		margin-right: 90px;
+		color: inherit;
+	}
+
+	&__item {
+	}
+}
